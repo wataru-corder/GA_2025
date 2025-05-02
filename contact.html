@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Syncode</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="これはHTMLCSS の課題作品です。" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- yakuhanjp読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css"
+    />
+    <!-- Google Fonts読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 游ゴシック読み込み-->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "lhr8wve",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!--futura読み込み-->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "lhr8wve",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="l-header">
+        <h1 class="l-header-logo">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo.png"
+              width="100"
+              height="20"
+              alt=""
+            />
+          </a>
+        </h1>
+        <nav class="l-header-nav">
+          <ul class="l-header-nav-list">
+            <li class="l-header-navItem">
+              <a href="index.html#feature" class="c-link-text-nav">特徴</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="index.html#service" class="c-link-text-nav">サービス</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="index.html#guide" class="c-link-text-nav">初めての方</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="index.html#work" class="c-link-text-nav">実績</a>
+            </li>
+            <li class="l-header-navItem border-right">
+              <a href="about.html" class="c-link-text-nav">会社情報</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="contact.html" class="c-link-text-nav">問い合わせ</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="contact.html" class="c-link-text-nav">資料請求</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-header-menu">
+          <div class="l-header-menuIcon">
+            <img
+              src="./assets/images/menuIcon.svg"
+              alt=""
+              width="34"
+              height="34"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="p-contact l-container-s">
+        <div class="p-contact-head">
+          <div class="p-contact-title">
+            <h1>お問い合わせ</h1>
+          </div>
+          <div class="p-contact-txt">
+            <p>
+              開発・企画・マーケティングコンサルに 関するご相談、採用のご応募<br
+                class="u-sp-block"
+              />
+              何でもお気軽にお問合せください。
+            </p>
+          </div>
+        </div>
+
+        <div class="p-contact-form">
+          <form action="submit_form.php" method="post">
+            <div>
+              <label for="company">会社名*</label>
+              <input
+                class="p-contact-form-text"
+                type="text"
+                id="company"
+                name="company"
+                required
+              />
+            </div>
+            <div>
+              <label for="name">お名前*</label>
+              <input
+                class="p-contact-form-text"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">メールアドレス*</label>
+              <input
+                class="p-contact-form-text"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">お問い合わせ内容*</label>
+              <textarea
+                id="message"
+                class="p-contact-form-textarea"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <div class="p-contact-privacy">
+              <input type="checkbox" id="privacy" name="privacy" required />
+              <label for="privacy">プライバシーポリシーに同意する</label>
+            </div>
+            <div class="p-contact-submit">
+              <button type="submit">送信</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="l-footer">
+        <nav class="l-footer-nav">
+          <div class="l-footer-nav-wrapper">
+            <ul class="l-footer-nav-parent">
+              <li class="l-footer-nav-parent-item pick">
+                <a href="#" class="c-linelink__txt pick">トップ</a>
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="about.html" class="c-linelink__txt pick">企業理念</a>
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="index.html#feature" class="c-linelink__txt pick"
+                  >特徴</a
+                >
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="contact.html" class="c-linelink__txt pick company"
+                  >会社紹介</a
+                >
+                <ul class="l-footer-nav-child">
+                  <li class="l-footer-nav-child-item about">
+                    <a href="contact.html">会社概要</a>
+                  </li>
+                  <li class="l-footer-nav-child-item about">
+                    <a href="contact.html">アクセス</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="l-footer-nav-parent bg">
+              <li class="l-footer-nav-parent-item">
+                <a href="index.html#service" class="c-linelink__txt pick"
+                  >サービス</a
+                >
+                <div class="l-footer-nav-parent-bg">
+                  <ul class="l-footer-nav-child">
+                    <li class="l-footer-nav-child-item">
+                      <a
+                        href="index.html#service"
+                        class="c-linelink__txt head u-pt0"
+                        >モバイルアプリの設計</a
+                      >
+                      <ul class="l-footer-nav-grandchild">
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >クロスプラットフォーム開発</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service">UI/UXデザイン</a>
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service">API連携</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="l-footer-nav-child">
+                    <li class="l-footer-nav-child-item">
+                      <a href="index.html#service" class="c-linelink__txt head"
+                        >マーケティング支援サービス</a
+                      >
+                      <ul class="l-footer-nav-grandchild">
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >アプリの立ち上げとローンチ支援</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >広告運用とキャンペーン支援</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >データ分析とパフォーマンス最適化</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >ユーザー獲得とリテンション戦略</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="l-footer-nav-child">
+                    <li class="l-footer-nav-child-item">
+                      <a href="index.html#service" class="c-linelink__txt head"
+                        >アフターサポートと運用支援</a
+                      >
+                      <ul class="l-footer-nav-grandchild">
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >アップデートとメンテナンス</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service">カスタマーサポート</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="l-footer-nav-parent">
+              <li class="l-footer-nav-parent-item guide">
+                <a href="index.html#guide" class="c-linelink__txt pick"
+                  >初めての方</a
+                >
+                <ul class="l-footer-nav-child">
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide"
+                      >どのような仕事の進め方をするのか知りたい</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide"
+                      >アプリ開発、マーケティング、集客施策の料金や相場を知りたい</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide"
+                      >アプリ開発を成功させるためのポイント</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide"
+                      >トータルで開発、マーケティングをお願いしたい方へ</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide"
+                      >失敗しないアプリ開発依頼方法のコツ</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="l-footer-nav-parent">
+              <li class="l-footer-nav-parent-item pick">
+                <a href="index.html#work" class="c-linelink__txt pick"
+                  >制作実績</a
+                >
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="contact.html" class="c-linelink__txt pick"
+                  >お問い合わせ</a
+                >
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="contact.html" class="c-linelink__txt pick">資料請求</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

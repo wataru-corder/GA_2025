@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Syncode</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="description" content="これはHTMLCSS の課題作品です。" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- yakuhanjp読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css"
+    />
+    <!-- Google Fonts読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 游ゴシック読み込み-->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "lhr8wve",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <!--futura読み込み-->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "lhr8wve",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="l-header">
+        <h1 class="l-header-logo">
+          <a href="index.html">
+            <img
+              src="./assets/images/logo.png"
+              width="100"
+              height="20"
+              alt=""
+            />
+          </a>
+        </h1>
+        <nav class="l-header-nav">
+          <ul class="l-header-nav-list">
+            <li class="l-header-navItem">
+              <a href="#feature" class="c-link-text-nav">特徴</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="#service" class="c-link-text-nav">サービス</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="#guide" class="c-link-text-nav">初めての方</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="#work" class="c-link-text-nav">実績</a>
+            </li>
+            <li class="l-header-navItem border-right">
+              <a href="about.html" class="c-link-text-nav">会社情報</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="contact.html" class="c-link-text-nav">問い合わせ</a>
+            </li>
+            <li class="l-header-navItem">
+              <a href="contact.html" class="c-link-text-nav">資料請求</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-header-menu">
+          <div class="l-header-menuIcon">
+            <img
+              src="./assets/images/menuIcon.svg"
+              alt=""
+              width="34"
+              height="34"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="p-top-mainVisual">
+      <div class="p-top-mainVisual-inner">
+        <div class="p-top-mainVisual-content">
+          <span class="p-top-mainVisual-subTitle u-en-text"
+            >Complete Mobile App Solutions<br />
+            to Drive Your Startup or SMB Success</span
+          >
+          <h2 class="p-top-mainVisual-title">
+            Syncodeは、スタートアップ企業や中小企業を対象に、<br />モバイルサービスの開発からマーケティングまで<br
+              class="u-sp-block"
+            />総合的に支援するアプリ開発会社です。
+          </h2>
+        </div>
+
+        <div class="p-top-mainVisual-video-content">
+          <video
+            src="assets/video/mainVisual.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="p-top-mainVisual-video-item"
+          ></video>
+        </div>
+      </div>
+    </div>
+    <div class="p-top-mainVisual-copy">
+      <p class="p-top-mainVisual-copy-text u-en-text">
+        We Build Creative and Functional Solutions
+      </p>
+    </div>
+    <main>
+      <section class="p-top-philosophy">
+        <div class="p-top-philosophy l-container">
+          <div class="p-top-philosophy-ttl">
+            <h2 class="c-title-level2">
+              <a href="about.html" class="c-link-text">企業理念</a>
+            </h2>
+          </div>
+          <div class="p-top-philosophy-content">
+            <p class="p-top-section-text">
+              私たちTechSageのミッションは、<br />
+              「クライアントの成長を支え<br />
+              開発とマーケティングの力で未来を切り拓くこと。」<br />
+              このミッションのもと、私たちはクライアントのビジネスが<br />
+              持つ可能性を最大限に引き出すために、<br />
+              柔軟で未来志向の開発とマーケティング戦略を提供しています。
+            </p>
+            <div class="c-btn c-btn-primary c-btn-white">
+              <a href="about.html">会社情報を見る</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="p-top-service">
+        <div class="p-top-service-inner l-container-s">
+          <div class="p-top-service-ttl">
+            <h2 class="c-title-level2">
+              <a href="#" class="c-link-text">サービス紹介</a>
+            </h2>
+          </div>
+
+          <div class="p-top-service-content">
+            <ul class="p-top-service-lists">
+              <li class="p-top-service-list">
+                <a href="#">
+                  <p class="p-top-service-list-ttl">
+                    <a href="#" class="c-link-text"
+                      >モバイルアプリの設計と開発</a
+                    >
+                  </p>
+                </a>
+                <div class="p-top-service-tags">
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >クロスプラットフォーム開発</a
+                  >
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >UI/UXデザイン</a
+                  >
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >API連携</a
+                  >
+                </div>
+              </li>
+              <li class="p-top-service-list">
+                <a href="#">
+                  <p class="p-top-service-list-ttl">
+                    <a href="#" class="c-link-text"
+                      >マーケティング支援サービス</a
+                    >
+                  </p>
+                </a>
+                <div class="p-top-service-tags">
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >アプリの立ち上げとローンチ支援</a
+                  >
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >広告運用とキャンペーン支援</a
+                  >
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >ユーザー獲得とリテンション戦略</a
+                  >
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >データ分析とパフォーマンス最適化</a
+                  >
+                </div>
+              </li>
+              <li class="p-top-service-list">
+                <a href="#">
+                  <p class="p-top-service-list-ttl">
+                    <a href="#" class="c-link-text">アフターサービス</a>
+                  </p>
+                </a>
+                <div class="p-top-service-tags">
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >アップデートとメンテナンス</a
+                  >
+                  <a href="#" class="p-top-service-list-tag c-link-text"
+                    >カスタマーサポート</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="c-btn c-btn-primary c-btn-black">
+            <a href="#">サービス紹介を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="p-top-work u-ptb">
+        <div class="p-top-work-inner l-container">
+          <div class="p-top-work-head">
+            <div class="p-top-work-ttl">
+              <h2 class="c-title-level2 c-title-border-left">
+                <a href="#" class="c-link-text">制作実績</a>
+              </h2>
+            </div>
+            <p class="p-top-head-text">
+              業界を問わず革新的なデザインと<br
+                class="sp-only-block"
+              />開発技術でクライアントのビジョンを実現し、<br
+                class="sp-only-block"
+              />
+              成果を上げてきました。
+            </p>
+          </div>
+
+          <div class="p-top-work-container">
+            <div class="p-top-work-container-inner">
+              <article class="p-top-work-item">
+                <div class="p-top-work-images">
+                  <a href="#">
+                    <img src="./assets/images/work1.jpg" alt="" />
+                  </a>
+                  <div class="p-top-work-text">
+                    <h3>
+                      <a href="#" class="p-top-work-item-ttl c-link-text"
+                        >株式会社モノリス</a
+                      >
+                    </h3>
+                    <div class="p-top-work-tags">
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text"
+                          >クロスプラットフォーム開発</a
+                        >
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">UI/UXデザイン</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">運用支援</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">広告運用</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">その他</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="p-top-work-item">
+                <div class="p-top-work-images">
+                  <a href="#">
+                    <img src="./assets/images/work2.jpg" alt="" />
+                  </a>
+                  <div class="p-top-work-text">
+                    <h3>
+                      <a href="#" class="p-top-work-item-ttl c-link-text"
+                        >株式会社モノリス</a
+                      >
+                    </h3>
+                    <div class="p-top-work-tags">
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text"
+                          >クロスプラットフォーム開発</a
+                        >
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">UI/UXデザイン</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">運用支援</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">広告運用</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">その他</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="p-top-work-item">
+                <div class="p-top-work-images">
+                  <a href="#">
+                    <img src="./assets/images/work3.jpg" alt="" />
+                  </a>
+                  <div class="p-top-work-text">
+                    <h3>
+                      <a href="#" class="p-top-work-item-ttl c-link-text"
+                        >株式会社モノリス</a
+                      >
+                    </h3>
+                    <div class="p-top-work-tags">
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text"
+                          >クロスプラットフォーム開発</a
+                        >
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">UI/UXデザイン</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">運用支援</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">広告運用</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">その他</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="p-top-work-item">
+                <div class="p-top-work-images">
+                  <a href="#">
+                    <img src="./assets/images/work4.jpg" alt="" />
+                  </a>
+                  <div class="p-top-work-text">
+                    <h3>
+                      <a href="#" class="p-top-work-item-ttl c-link-text"
+                        >株式会社モノリス</a
+                      >
+                    </h3>
+                    <div class="p-top-work-tags">
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text"
+                          >クロスプラットフォーム開発</a
+                        >
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">UI/UXデザイン</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">運用支援</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">広告運用</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">その他</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="p-top-work-item">
+                <div class="p-top-work-images">
+                  <a href="#">
+                    <img src="./assets/images/work5.jpg" alt="" />
+                  </a>
+                  <div class="p-top-work-text">
+                    <h3>
+                      <a href="#" class="p-top-work-item-ttl c-link-text"
+                        >株式会社モノリス</a
+                      >
+                    </h3>
+                    <div class="p-top-work-tags">
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text"
+                          >クロスプラットフォーム開発</a
+                        >
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">UI/UXデザイン</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">運用支援</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">広告運用</a>
+                      </p>
+                      <p class="p-top-work-tag">
+                        <a href="#" class="c-link-text">その他</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="c-btn c-btn-primary c-btn-black">
+            <a href="#">制作の実績を見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="feature" class="p-top-feature u-ptb">
+        <div class="p-top-feature-inner">
+          <div class="p-top-feature-head">
+            <div class="p-top-feature-ttl">
+              <h2 class="c-title-level2 c-title-border-left">
+                <a href="#" class="c-link-text">私たちの特徴</a>
+              </h2>
+            </div>
+          </div>
+
+          <div class="p-top-feature-container">
+            <div class="p-top-feature-container-inner">
+              <p class="p-top-head-text">他の開発会社と異なるところ</p>
+              <ul class="p-top-feature-lists">
+                <li class="p-top-feature-list">
+                  <a href="#" class="p-top-feature-text c-link-text"
+                    >アプリ開発だけでなく、その後のマーケティング支援やデータ分析まで<br />一貫してサポートできます</a
+                  >
+                </li>
+                <li class="p-top-feature-list">
+                  <a href="#" class="p-top-feature-text c-linelink__txt"
+                    >スタートアップから大手企業まで、<br />幅広い業種や規模の企業と協力してきた豊富な実績があります</a
+                  >
+                </li>
+                <li class="p-top-feature-list">
+                  <a href="#" class="p-top-feature-text c-link-text"
+                    >私たちは、20年以上の開発受託制作経験を誇り、<br />業界内でもトップクラスの開発力を持っています</a
+                  >
+                </li>
+                <li class="p-top-feature-list">
+                  <a href="#" class="p-top-feature-text c-link-text"
+                    >開発の専門知識だけでなく、マーケティングや<br />ブランディングに関する深い知識も有しております</a
+                  >
+                </li>
+              </ul>
+
+              <div class="p-top-feature-number-list">
+                <div class="p-top-feature-number-item">
+                  <div class="p-top-feature-number-num">
+                    <span>546</span>
+                  </div>
+                  <p class="p-top-feature-number-detail">累計プロジェクト数</p>
+                </div>
+                <div class="p-top-feature-number-item">
+                  <div class="p-top-feature-number-num">
+                    <span>4.1</span>
+                  </div>
+                  <div class="p-top-feature-details">
+                    <p class="p-top-feature-number-detail">アプリの平均評価</p>
+                    <p class="p-top-feature-number-detail-pick">
+                      ※App Storeでの評価
+                    </p>
+                  </div>
+                </div>
+                <div class="p-top-feature-number-item">
+                  <div class="p-top-feature-number-num">
+                    <span>1.2<span class="unit">億</span></span>
+                  </div>
+                  <p class="p-top-feature-number-detail">累計ダウンロード数</p>
+                </div>
+              </div>
+              <div class="c-btn c-btn-primary c-btn-black">
+                <a href="#">私たちの特徴を見る</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="guide" class="p-top-guide u-ptb">
+        <div class="p-top-guide-inner l-container">
+          <div class="p-top-feature-head">
+            <div class="p-top-feature-ttl">
+              <h2 class="c-title-level2 c-title-border-left">
+                <a href="#" class="c-link-text">初めての方へ</a>
+              </h2>
+            </div>
+          </div>
+          <div class="p-top-guide-content">
+            <p class="p-top-head-text">ご依頼の疑問解消します</p>
+            <ul class="p-top-guide-lists">
+              <li class="p-top-guide-list">
+                <a href="#" class="p-top-guide-text c-link-text"
+                  >どのような仕事の進め方をするのか知りたい</a
+                >
+              </li>
+              <li class="p-top-guide-list">
+                <a href="#" class="p-top-guide-text c-link-text"
+                  >アプリ開発、マーケティング、<br
+                    class="u-sp-block"
+                  />集客施策の料金や相場を知りたい</a
+                >
+              </li>
+              <li class="p-top-guide-list">
+                <a href="#" class="p-top-guide-text c-link-text"
+                  >アプリ開発を成功させるためのポイント</a
+                >
+              </li>
+              <li class="p-top-guide-list">
+                <a href="#" class="p-top-guide-text c-link-text"
+                  >トータルで開発、マーケティングをお願いしたい方へ</a
+                >
+              </li>
+              <li class="p-top-guide-list">
+                <a href="#" class="p-top-guide-text c-link-text"
+                  >失敗しないアプリ開発依頼方法のコツ</a
+                >
+              </li>
+            </ul>
+            <div class="c-btn c-btn-primary c-btn-black">
+              <a href="#">初めての方へ一覧を見る</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-top-guide-flow-content l-container">
+          <div class="p-top-guide-flow-ttl">
+            <h3>仕事の進め方</h3>
+          </div>
+          <div class="p-top-guide-flow-lists">
+            <div class="p-top-guide-flow-item">
+              <a href="#">
+                <div class="p-top-guide-flow-num">
+                  <span>Step.01</span>
+                </div>
+                <h4 class="p-top-guide-flow-head">
+                  <a href="#" class="c-link-text">調査</a>
+                </h4>
+                <p class="p-top-guide-flow-text">
+                  TechSageでは、最初のステップとして<br class="u-sp-block" />
+                  徹底した調査を行います。市場動向、競合分析、<br
+                    class="u-sp-block"
+                  />
+                  ターゲットユーザーのニーズを深掘りし、<br
+                    class="u-sp-block"
+                  />
+                  クライアント様のビジネスや<br class="u-sp-block" />
+                  アプリケーションに対する理解を深めます。
+                </p>
+              </a>
+            </div>
+            <div class="p-top-guide-flow-item">
+              <a href="#">
+                <div class="p-top-guide-flow-num">
+                  <span>Step.02</span>
+                </div>
+                <h4 class="p-top-guide-flow-head">
+                  <a href="#" class="c-link-text">戦略</a>
+                </h4>
+                <p class="p-top-guide-flow-text">
+                  調査結果をもとに、戦略立案を行います。<br
+                    class="u-sp-block"
+                  />
+                  マーケティング、ユーザー獲得、<br class="u-sp-block" />
+                  クライアント様の目標に合わせたカスタマイズ<br
+                    class="u-sp-block"
+                  />
+                  された戦略を提供します。
+                </p>
+              </a>
+            </div>
+            <div class="p-top-guide-flow-item">
+              <a href="#">
+                <div class="p-top-guide-flow-num">
+                  <span>Step.03</span>
+                </div>
+                <h4 class="p-top-guide-flow-head">
+                  <a href="#" class="c-link-text">設計</a>
+                </h4>
+                <p class="p-top-guide-flow-text">
+                  ユーザー中心の設計思想を大切にしています。
+                  アプリのUI/UX設計は、ユーザーの使いやすさと
+                  魅力を最大限に引き出すことを重視します。
+                </p>
+              </a>
+            </div>
+            <div class="p-top-guide-flow-item">
+              <a href="#">
+                <div class="p-top-guide-flow-num">
+                  <span>Step.04</span>
+                </div>
+                <h4 class="p-top-guide-flow-head">
+                  <a href="#" class="c-link-text">実装</a>
+                </h4>
+                <p class="p-top-guide-flow-text">
+                  開発段階では、データ分析やA/Bテストを通じて<br
+                    class="u-sp-block"
+                  />
+                  最適化を行い、ユーザーが直面する可能性のある<br
+                    class="u-sp-block"
+                  />
+                  問題を予測し、早期に改善策を講じることで、<br
+                    class="u-sp-block"
+                  />
+                  クライアント様の期待を超える成果を 生み出します。
+                </p>
+              </a>
+            </div>
+
+            <div class="p-top-guide-flow-item">
+              <a href="#">
+                <div class="p-top-guide-flow-num">
+                  <span>Step.05</span>
+                </div>
+                <h4 class="p-top-guide-flow-head">
+                  <a href="#" class="c-link-text">運用・改善</a>
+                </h4>
+                <p class="p-top-guide-flow-text">
+                  アプリやサービスのリリース後、運用フェーズ<br
+                    class="u-sp-block"
+                  />
+                  でのサポートを継続的に提供します。<br class="u-sp-block" />
+                  データ分析を基にユーザーの行動を監視し、<br
+                    class="u-sp-block"
+                  />
+                  最適化や改善点をリアルタイムで反映させます。
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="c-btn c-btn-primary c-btn-black">
+            <a href="#">仕事の進め方を知る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-top-contact">
+        <div class="p-top-contact-inner l-container">
+          <div class="p-top-contact-item">
+            <div class="p-top-contact-head">
+              <a href="contact.html" class="c-link-text">資料請求</a>
+            </div>
+            <p class="p-top-contact-text">
+              仕事の進め方や実績などをまとめた会社案内をPDFでご用意。<br />ご自由にダウンロードください。
+            </p>
+          </div>
+          <div class="p-top-contact-item">
+            <div class="p-top-contact-head">
+              <a href="#" class="c-link-text">お問い合わせ</a>
+            </div>
+            <p class="p-top-contact-text">
+              アプリに関することならお気軽にご相談ください。<br />お見積もり依頼も可能です。お問い合わせでよくある質問もご用意しています。
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="l-footer">
+        <nav class="l-footer-nav">
+          <div class="l-footer-nav-wrapper">
+            <ul class="l-footer-nav-parent">
+              <li class="l-footer-nav-parent-item pick">
+                <a href="#" class="c-linelink__txt pick">トップ</a>
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="" class="c-linelink__txt pick">企業理念</a>
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="index.html#feature" class="c-linelink__txt pick"
+                  >特徴</a
+                >
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="contact.html" class="c-linelink__txt pick company"
+                  >会社紹介</a
+                >
+                <ul class="l-footer-nav-child">
+                  <li class="l-footer-nav-child-item about">
+                    <a href="contact.html">会社概要</a>
+                  </li>
+                  <li class="l-footer-nav-child-item about">
+                    <a href="contact.html">アクセス</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="l-footer-nav-parent bg">
+              <li class="l-footer-nav-parent-item">
+                <a href="index.html#service" class="c-linelink__txt pick"
+                  >サービス</a
+                >
+                <div class="l-footer-nav-parent-bg">
+                  <ul class="l-footer-nav-child">
+                    <li class="l-footer-nav-child-item">
+                      <a
+                        href="index.html#service"
+                        class="c-linelink__txt head u-pt0"
+                        >モバイルアプリの設計</a
+                      >
+                      <ul class="l-footer-nav-grandchild">
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >クロスプラットフォーム開発</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service">UI/UXデザイン</a>
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service">API連携</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="l-footer-nav-child">
+                    <li class="l-footer-nav-child-item">
+                      <a href="index.html#service" class="c-linelink__txt head"
+                        >マーケティング支援サービス</a
+                      >
+                      <ul class="l-footer-nav-grandchild">
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >アプリの立ち上げとローンチ支援</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >広告運用とキャンペーン支援</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >データ分析とパフォーマンス最適化</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >ユーザー獲得とリテンション戦略</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <ul class="l-footer-nav-child">
+                    <li class="l-footer-nav-child-item">
+                      <a href="index.html#service" class="c-linelink__txt head"
+                        >アフターサポートと運用支援</a
+                      >
+                      <ul class="l-footer-nav-grandchild">
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service"
+                            >アップデートとメンテナンス</a
+                          >
+                        </li>
+                        <li class="l-fotter-nav-grandchild-item">
+                          <a href="index.html#service">カスタマーサポート</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <ul class="l-footer-nav-parent">
+              <li class="l-footer-nav-parent-item guide">
+                <a href="index.html#guide" class="c-linelink__txt pick"
+                  >初めての方</a
+                >
+                <ul class="l-footer-nav-child">
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide" class="c-linelink__txt"
+                      >どのような仕事の進め方をするのか知りたい</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide" class="c-linelink__txt"
+                      >アプリ開発、マーケティング、集客施策の料金や相場を知りたい</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide" class="c-linelink__txt"
+                      >アプリ開発を成功させるためのポイント</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide" class="c-linelink__txt"
+                      >トータルで開発、マーケティングをお願いしたい方へ</a
+                    >
+                  </li>
+                  <li class="l-footer-nav-child-item">
+                    <a href="index.html#guide" class="c-linelink__txt"
+                      >失敗しないアプリ開発依頼方法のコツ</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="l-footer-nav-parent">
+              <li class="l-footer-nav-parent-item pick">
+                <a href="index.html#work" class="c-linelink__txt pick"
+                  >制作実績</a
+                >
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="contact.html" class="c-linelink__txt pick"
+                  >お問い合わせ</a
+                >
+              </li>
+              <li class="l-footer-nav-parent-item pick">
+                <a href="contact.html" class="c-linelink__txt pick">資料請求</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
